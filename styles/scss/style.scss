@@ -1,0 +1,77 @@
+$divider-color: #d7d7d7;
+$primary-color: #ecc7d0;
+$secondary-color: #ec3c73;
+$text-color: #000000;
+$font-stack: Lato, Arial, Helvetica;
+$top-bar-spacing: 1.3rem;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+p {
+    display: inline;
+}
+
+// top bar styles
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+}
+
+.contact-info-container {
+    flex: 1;
+    display: flex;
+}
+
+.phone-number-item {
+    margin-right: $top-bar-spacing;
+}
+
+.top-bar-icon {
+    margin-right: 0.5rem;
+}
+
+.auth-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: none;
+    border-left: 1px solid $divider-color;
+    border-right: 1px solid $divider-color;
+    background-color: inherit;
+    padding: 0px $top-bar-spacing;
+    cursor: pointer;
+}
+
+.auth-button:nth-child(2) {
+    border-left: none;
+}
+
+.user-auth-container {
+    display: flex;
+    height: 100%;
+    line-height: 22px;
+}
+
+.divider {
+    height: 1px;
+    background-color: $divider-color;
+    border: none;
+}
+
+// mid bar styles
+
