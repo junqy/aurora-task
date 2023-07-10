@@ -1,0 +1,13 @@
+.lower-navbar {
+    margin-bottom: 1.6rem;
+}
+
+.navbar-section {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selected-section {
+    color: $primary-color;
+}

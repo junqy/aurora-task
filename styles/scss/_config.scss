@@ -1,0 +1,58 @@
+$divider-color: #d7d7d7;
+$primary-color: #ecc7d0;
+$secondary-color: #ec3c73;
+$text-color: #000000;
+$search-color: #191919;
+$dropdown-hover-color: #f7f7f7;
+$dropdown-border-color: #eeeeee;
+$font-stack: Lato, Arial, Helvetica;
+$top-bar-spacing: 1.3rem;
+
+$fontsizes: (10, 12, 14, 16, 18);
+
+@each $size in $fontsizes {
+    .fs-#{$size} {
+        font-size: #{$size}px;
+    }
+}
+
+$fontweights: (400, 700);
+
+@each $weight in $fontweights {
+    .fw-#{$weight} {
+        font-weight: #{$weight};
+    }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .mt-#{$space} {
+        margin: #{$space}rem 0 0 0;
+    }
+    .mb-#{$space} {
+        margin: 0 0 #{$space}rem 0;
+    }
+    .ml-#{$space} {
+        margin: 0 0 0#{$space}px;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}

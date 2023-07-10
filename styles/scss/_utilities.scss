@@ -1,0 +1,11 @@
+.divider {
+    height: 1px;
+    background-color: $divider-color;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+}
+
+.contact-info-container {
+    flex: 1;
+    display: flex;
+}
+
+.phone-number-item {
+    margin-right: $top-bar-spacing;
+}
+
+.top-bar-icon {
+    margin-right: 0.5rem;
+}
+
+.top-bar-text {
+    font-size: 14px;
+}
+
+.auth-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: none;
+    border-left: 1px solid $divider-color;
+    border-right: 1px solid $divider-color;
+    background-color: inherit;
+    padding: 0 1.7em;
+    cursor: pointer;
+}
+
+.auth-button:nth-child(2) {
+    border-left: none;
+}
+
+.user-auth-container {
+    display: flex;
+    height: 100%;
+    line-height: 22px;
+}
