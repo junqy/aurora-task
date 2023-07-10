@@ -11,6 +11,13 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <header>
@@ -60,135 +67,163 @@
                         alt="aurora-box-logo"
                         class="brand-logo"
                     />
-                    <div class="search-group">
-                        <input
-                            class="search-bar"
-                            placeholder="Co chcesz kupić?"
-                        />
-                        <img
-                            src="./assets/search.png"
-                            alt="search-icon"
-                            class="search-icon"
-                        />
-                    </div>
-                    <div class="dropdown">
-                        <div class="basket-container dropbtn">
-                            <img
-                                src="./assets/basket.png"
-                                alt="basket-icon"
-                                class="dropbtn"
+                    <div class="mobile-navbar">
+                        <div class="search-group desktop-view">
+                            <input
+                                class="search-bar"
+                                placeholder="Co chcesz kupić?"
                             />
-                            <span class="badge">2</span>
-                            <p class="basket-text dropbtn">Twój koszyk</p>
+                            <img
+                                src="./assets/search.png"
+                                alt="search-icon"
+                                class="search-icon"
+                            />
                         </div>
-                        <div class="dropdown-margin">
-                            <div class="dropdown-content basket-dropdown">
-                                <div class="my-1">
-                                    <p class="fs-14">
-                                        Produkty w koszyku:
-                                        <span class="fw-700">2</span>
-                                    </p>
-                                    <p>
-                                        Kwota do zapłaty:
-                                        <span class="fw-700 fs-18"
-                                            >207.00 zł</span
-                                        >
-                                    </p>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="container my-2">
-                                    <div class="container-item">
-                                        <img
-                                            src="./assets/item1.png"
-                                            alt="product-preview"
+                        <div class="search-btn-mobile dropdown">
+                            <i
+                                class="fa-solid fa-magnifying-glass fa-xl pr-1 dropbtn"
+                            ></i>
+                            <div class="dropdown-margin">
+                                <div class="dropdown-content search-dropdown">
+                                    <div class="search-group">
+                                        <input
+                                            class="search-bar"
+                                            placeholder="Co chcesz kupić?"
                                         />
-                                        <div class="info-wrapper ml-10">
-                                            <div>
-                                                <p class="product-name fs-14">
-                                                    Biustonosz push-up line mos
-                                                    12
-                                                </p>
-                                                <p class="fs-16 fw-700">
-                                                    59.00 zł
-                                                </p>
-                                            </div>
-
-                                            <div class="options-wrapper">
-                                                <p class="fs-14">
-                                                    ilość:
-                                                    <input
-                                                        value="1"
-                                                        class="quantity-number ml-4"
-                                                    />
-                                                </p>
-                                                <div>
-                                                    <img
-                                                        src="./assets/edit.png"
-                                                        alt="edit-icon"
-                                                    />
-                                                    <img
-                                                        src="./assets/delete.png"
-                                                        alt="delete-icon"
-                                                        class="ml-10"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container-item mt-2">
                                         <img
-                                            src="./assets/item2.png"
-                                            alt="product-preview"
+                                            src="./assets/search.png"
+                                            alt="search-icon"
+                                            class="search-icon"
                                         />
-                                        <div class="info-wrapper ml-10">
-                                            <div>
-                                                <p
-                                                    class="product-name fs-14 price-decoration"
-                                                >
-                                                    Biustonosz push-up line re 6
-                                                </p>
-                                                <div class="price-wrapper">
-                                                    <p class="fs-16 fw-700">
-                                                        79.00 zł
-                                                    </p>
-                                                    <p
-                                                        class="ml-8 fs-12 price-decoration old-price"
-                                                    >
-                                                        109.00zł
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="options-wrapper">
-                                                <p class="fs-14">
-                                                    ilość:
-                                                    <input
-                                                        value="2"
-                                                        class="quantity-number ml-4"
-                                                    />
-                                                </p>
-                                                <div>
-                                                    <img
-                                                        src="./assets/edit.png"
-                                                        alt="edit-icon"
-                                                    />
-                                                    <img
-                                                        src="./assets/delete.png"
-                                                        alt="delete-icon"
-                                                        class="ml-10"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="btn-wrapper my-1">
-                                    <button class="basket-btn mt-1">
-                                        Zobacz koszyk
-                                    </button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="basket-container dropbtn">
+                                <img
+                                    src="./assets/basket.png"
+                                    alt="basket-icon"
+                                    class="dropbtn"
+                                />
+                                <span class="badge">2</span>
+                                <p class="basket-text dropbtn">Twój koszyk</p>
+                            </div>
+                            <div class="dropdown-margin">
+                                <div class="dropdown-content basket-dropdown">
+                                    <div class="my-1">
+                                        <p class="fs-14">
+                                            Produkty w koszyku:
+                                            <span class="fw-700">2</span>
+                                        </p>
+                                        <p>
+                                            Kwota do zapłaty:
+                                            <span class="fw-700 fs-18"
+                                                >207.00 zł</span
+                                            >
+                                        </p>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="container my-2">
+                                        <div class="container-item">
+                                            <img
+                                                src="./assets/item1.png"
+                                                alt="product-preview"
+                                            />
+                                            <div class="info-wrapper ml-10">
+                                                <div>
+                                                    <p
+                                                        class="product-name fs-14"
+                                                    >
+                                                        Biustonosz push-up line
+                                                        mos 12
+                                                    </p>
+                                                    <p class="fs-16 fw-700">
+                                                        59.00 zł
+                                                    </p>
+                                                </div>
+
+                                                <div class="options-wrapper">
+                                                    <p class="fs-14">
+                                                        ilość:
+                                                        <input
+                                                            value="1"
+                                                            class="quantity-number ml-4"
+                                                        />
+                                                    </p>
+                                                    <div>
+                                                        <img
+                                                            src="./assets/edit.png"
+                                                            alt="edit-icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/delete.png"
+                                                            alt="delete-icon"
+                                                            class="ml-10"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container-item mt-2">
+                                            <img
+                                                src="./assets/item2.png"
+                                                alt="product-preview"
+                                            />
+                                            <div class="info-wrapper ml-10">
+                                                <div>
+                                                    <p
+                                                        class="product-name fs-14 price-decoration"
+                                                    >
+                                                        Biustonosz push-up line
+                                                        re 6
+                                                    </p>
+                                                    <div class="price-wrapper">
+                                                        <p class="fs-16 fw-700">
+                                                            79.00 zł
+                                                        </p>
+                                                        <p
+                                                            class="ml-8 fs-12 price-decoration old-price"
+                                                        >
+                                                            109.00zł
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="options-wrapper">
+                                                    <p class="fs-14">
+                                                        ilość:
+                                                        <input
+                                                            value="2"
+                                                            class="quantity-number ml-4"
+                                                        />
+                                                    </p>
+                                                    <div>
+                                                        <img
+                                                            src="./assets/edit.png"
+                                                            alt="edit-icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/delete.png"
+                                                            alt="delete-icon"
+                                                            class="ml-10"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="btn-wrapper my-1">
+                                        <button class="basket-btn mt-1">
+                                            Zobacz koszyk
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hamburger-btn-mobile">
+                            <i class="fa-solid fa-bars fa-xl pr-1"></i>
                         </div>
                     </div>
                 </div>
@@ -216,10 +251,12 @@
                     <li class="navbar-section">Nasza Oferta</li>
                     <li class="navbar-section">Trendy 2018</li>
                     <li class="navbar-section">Blog</li>
+                    <li class="navbar-section mobile-text">Zaloguj się</li>
+                    <li class="navbar-section mobile-text">Załóż konto</li>
                 </ul>
             </div>
-            <hr class="divider" />
         </header>
         <script src="./scripts/dropdown.js"></script>
+        <script src="./scripts/menu.js"></script>
     </body>
 </html>
