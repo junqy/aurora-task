@@ -6,8 +6,15 @@
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.15s ease, background-color 0.3s ease;
 }
 
 .selected-section {
     color: $primary-color;
 }
+
+ @media (min-width: 900px) {
+    .navbar-section:hover {
+        color: $secondary-color;
+    }
+ }

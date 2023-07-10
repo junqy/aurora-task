@@ -32,6 +32,11 @@
     background-color: inherit;
     padding: 0 1.7em;
     cursor: pointer;
+    transition: color 0.15s ease;
+
+    &:hover {
+        color: $secondary-color;
+    }
 }
 
 .auth-button:nth-child(2) {
